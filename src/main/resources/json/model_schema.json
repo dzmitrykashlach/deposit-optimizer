@@ -1,0 +1,89 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "variables": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "weight": {
+              "type": "integer"
+            },
+            "lower": {
+              "type": "integer"
+            },
+            "upper": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "weight",
+            "lower",
+            "upper"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "weight": {
+              "type": "integer"
+            },
+            "lower": {
+              "type": "integer"
+            },
+            "upper": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "weight",
+            "lower",
+            "upper"
+          ]
+        }
+      ]
+    },
+    "constraints": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "lower": {
+              "type": "integer"
+            },
+            "upper": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "name",
+            "lower",
+            "upper"
+          ]
+        }
+      ]
+    },
+    "result": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "variables",
+    "constraints",
+    "result"
+  ]
+}
